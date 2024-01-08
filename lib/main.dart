@@ -4,8 +4,8 @@ import 'export.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(DevicePreview(
-    enabled: debugDisplay,
+  runApp(DevicePreview( //it gives the flexibility to simulate our app on diffrent devices
+    enabled: debugDisplay, //set it to !k release mode to test on diffrent devices
     tools: const [
       ...DevicePreview.defaultTools,
     ],

@@ -13,7 +13,7 @@ class ChildLockLeft extends ConsumerWidget {
 
     return GestureDetector(
       onTap: () {
-        debugPrint('Tapped child lock left');
+       // debugPrint('Tapped child lock left');
         ref.read(vehicleProvider.notifier).setChildLock(side: 'left');
       },
       child: Column(
